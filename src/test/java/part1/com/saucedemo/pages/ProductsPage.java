@@ -1,4 +1,4 @@
-package com.saucedemo.pages;
+package part1.com.saucedemo.pages;
 
 import org.openqa.selenium.By;
 
