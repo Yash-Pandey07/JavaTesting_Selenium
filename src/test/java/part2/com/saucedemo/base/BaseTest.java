@@ -1,11 +1,11 @@
 package part2.com.saucedemo.base;
 
+import com.base.BasePage;
+import com.saucedemo.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import part1.com.saucedemo.pages.BasePage;
-import part1.com.saucedemo.pages.LoginPage;
 
 public class BaseTest {
     protected WebDriver driver;
