@@ -8,6 +8,6 @@ public class JavaScriptTest extends Base {
 
     @Test
     public void testScrollingToElement() {
-
+        homePage.goToForms();
     }
 }

@@ -24,4 +24,13 @@ public class BasePage {
     }
 
     //Base page = https://www.saucedemo.com/v1/
+
+    public static void delay(int milliseconds) {
+        // Demo Purpose
+        try {
+            Thread.sleep(milliseconds);
+        } catch(InterruptedException exc) {
+            exc.printStackTrace();
+        }
+    }
 }

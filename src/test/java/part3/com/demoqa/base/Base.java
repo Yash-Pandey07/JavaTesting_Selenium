@@ -8,6 +8,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import static com.base.BasePage.delay;
+import static utilities.Utility.setUtilityDriver;
+
 public class Base {
     private WebDriver driver;
     protected BasePage basePage;
@@ -26,11 +29,13 @@ public class Base {
         driver.get(DEMOQA_URL);
         basePage = new BasePage();
         basePage.setDriver(driver);
+        setUtilityDriver();
         homePage = new HomePage();
     }
 
     @AfterClass
     public void tearDown() {
+        delay(3000);
         driver.quit();
     }
 
