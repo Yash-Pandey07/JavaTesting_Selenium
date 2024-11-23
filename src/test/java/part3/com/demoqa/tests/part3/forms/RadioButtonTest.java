@@ -9,5 +9,6 @@ public class RadioButtonTest  extends BaseTest {
     public void testRadioButton() {
         var formsPage = homePage.goToForms().clickPracticeForm();
         formsPage.clickFemaleRadioButton();
+        boolean isFemaleRadioButtonSelected = formsPage.isFemaleSelected();
     }
 }

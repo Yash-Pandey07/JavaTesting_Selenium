@@ -12,6 +12,7 @@ import static com.base.BasePage.delay;
 import static utilities.Utility.setUtilityDriver;
 
 public class BaseTest {
+
     private WebDriver driver;
     protected BasePage basePage;
     protected HomePage homePage;
@@ -38,6 +39,4 @@ public class BaseTest {
         delay(3000);
         driver.quit();
     }
-
-
 }
