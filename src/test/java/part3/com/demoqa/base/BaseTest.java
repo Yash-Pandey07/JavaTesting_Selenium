@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import static com.base.BasePage.delay;
 import static utilities.Utility.setUtilityDriver;
 
-public class Base {
+public class BaseTest {
     private WebDriver driver;
     protected BasePage basePage;
     protected HomePage homePage;
