@@ -1,6 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class SwitchToUtility extends Utility{
     private static WebDriver.TargetLocator switchTo() {
@@ -23,4 +24,23 @@ public class SwitchToUtility extends Utility{
         switchTo().alert().sendKeys(text);
     }
 
+    public static void switchToFrameString(String value) {
+        switchTo().frame(value);
+    }
+
+    public static void switchToDefaultContent() {
+        switchTo().defaultContent();
+    }
+
+    public static void switchToFrameIndex(int index) {
+        switchTo().frame(index);
+    }
+
+    public static void switchToFrameElement(WebElement element) {
+        switchTo().frame(element);
+    }
+
+    public static void switchToWindow(String handle) {
+        switchTo().window(handle);
+    }
 }
