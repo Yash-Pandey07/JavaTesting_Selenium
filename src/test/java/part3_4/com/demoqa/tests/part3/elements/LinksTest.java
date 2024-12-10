@@ -1,8 +1,8 @@
-package part3.com.demoqa.tests.part3.elements;
+package part3_4.com.demoqa.tests.part3.elements;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import part3.com.demoqa.base.BaseTest;
+import part3_4.com.demoqa.base.BaseTest;
 
 public class LinksTest extends BaseTest {
 

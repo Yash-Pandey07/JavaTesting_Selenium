@@ -1,8 +1,8 @@
-package part3.com.demoqa.tests.part4.alerts;
+package part3_4.com.demoqa.tests.part4.alerts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import part3.com.demoqa.base.BaseTest;
+import part3_4.com.demoqa.base.BaseTest;
 
 import static utilities.SwitchToUtility.*;
 
