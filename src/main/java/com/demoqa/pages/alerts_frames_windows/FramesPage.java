@@ -17,8 +17,8 @@ public class FramesPage extends Alerts_Frames_WindowsPage{
     }
 
     private void switchToSmallBox() {
-    switchToFrameIndex(3);
-//        switchToFrameElement(find(iFrameSmallBox));
+//    switchToFrameIndex(3);
+        switchToFrameElement(find(iFrameSmallBox));
     }
 
 
