@@ -17,8 +17,8 @@ public class FramesPage extends Alerts_Frames_WindowsPage{
     }
 
     private void switchToSmallBox() {
-//    switchToFrameIndex(3);
-        switchToFrameElement(find(iFrameSmallBox));
+    switchToFrameIndex(3);
+//        switchToFrameElement(find(iFrameSmallBox));
     }
 
 
@@ -33,5 +33,13 @@ public class FramesPage extends Alerts_Frames_WindowsPage{
         System.out.println("Big Frame Text: " + bigFrameText);
         switchToDefaultContent();
         return bigFrameText;
+    }
+
+    public String getTextInSmallFrame() {
+        switchToSmallBox();
+        String smallFrameText = find(textInFrame).getText();
+        System.out.println("Small Frame Text: " + smallFrameText);
+        switchToDefaultContent();
+        return smallFrameText;
     }
 }
